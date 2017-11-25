@@ -1,6 +1,6 @@
 {
   "name": "Anti-Paywall",
-  "version": "0.1",
+  "version": "0.2",
   "description": "This will prevent cookies from being stored, spoof the user-agent and mangle the referrer to maximize the chances of bypassing paywalls.",
   "permissions": ["webRequest", "webRequestBlocking",
 	  "*://*.adelaidenow.com.au/*",
@@ -60,6 +60,10 @@
                   ],
   "background": {
     "scripts": ["background.js"]
+  },
+  "icons": {
+    "48": "icons/logo-48.png",
+    "96": "icons/logo-96.png"
   },
   "manifest_version": 2
 }
