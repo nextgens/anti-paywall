@@ -35,6 +35,7 @@
 	  "*://*.newsweek.com/*",
 	  "*://*.newyorker.com/*",
 	  "*://*.nrc.nl/*",
+	  "*://*.nyt.com/*",
 	  "*://*.nytimes.com/*",
 	  "*://*.ocregister.com/*",
 	  "*://*.orlandosentinel.com/*",
@@ -54,7 +55,8 @@
 	  "*://*.thetimes.co.uk/*",
 	  "*://*.volkskrant.nl/*",
 	  "*://*.washingtonpost.com/*",
-	  "*://*.wsj.com/*"
+	  "*://*.wsj.com/*",
+	  "*://*.wsj.net/*"
                   ],
   "background": {
     "scripts": ["background.js"]
