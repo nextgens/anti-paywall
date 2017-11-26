@@ -1,6 +1,6 @@
 {
   "name": "Anti-Paywall",
-  "version": "0.2",
+  "version": "0.3",
   "description": "This will prevent cookies from being stored, spoof the user-agent and mangle the referrer to maximize the chances of bypassing paywalls.",
   "permissions": ["webRequest", "webRequestBlocking",
 	  "*://*.adelaidenow.com.au/*",
@@ -19,7 +19,6 @@
 	  "*://*.forbes.com/*",
 	  "*://*.ft.com/*",
 	  "*://*.geelongadvertiser.com.au/*",
-	  "*://*.glassdoor.com/*",
 	  "*://*.haaretz.co.il/*",
 	  "*://*.haaretz.com/*",
 	  "*://*.hbr.org/*",
@@ -35,7 +34,6 @@
 	  "*://*.nationalpost.com/*",
 	  "*://*.newsweek.com/*",
 	  "*://*.newyorker.com/*",
-	  "*://*.nnsl.com/*",
 	  "*://*.nrc.nl/*",
 	  "*://*.nytimes.com/*",
 	  "*://*.ocregister.com/*",

@@ -1,3 +1,10 @@
+const cookies = ([
+//	theaustralian.com.au
+	'open_token=anonymous',
+	'sr=true',
+	'n_regis=123456789'
+]).join('; ').trim()
+
 function evadePaywalls(details) {
 	var reqHeaders = details.requestHeaders.filter(function(header) {
 		// drop cookies, referer and UA
@@ -16,6 +23,17 @@ function evadePaywalls(details) {
 	reqHeaders.push({
 		"name": "User-Agent",
 		"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+	})
+
+	reqHeaders.push({
+		"name": "Cookie",
+		"value": cookies
+	})
+
+	// This seems to do the trick just fine for WSJ
+	reqHeaders.push({
+		"name": "X-Forwarded-For",
+		"value": "66.249.66.1"
 	})
 
 	return {requestHeaders: reqHeaders};
