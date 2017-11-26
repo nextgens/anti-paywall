@@ -1,7 +1,7 @@
 {
   "name": "Anti-Paywall",
   "version": "0.3",
-  "description": "This will prevent cookies from being stored, spoof the user-agent and mangle the referrer to maximize the chances of bypassing paywalls.",
+  "description": "This extension will mangle your browser's requests to maximize the chances of bypassing paywalls.",
   "permissions": ["webRequest", "webRequestBlocking",
 	  "*://*.adelaidenow.com.au/*",
 	  "*://*.baltimoresun.com/*",
