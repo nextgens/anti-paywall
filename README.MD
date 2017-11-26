@@ -6,7 +6,7 @@ This extension will mangle your browser's requests to maximize the chances of by
 
 You can install the app from the market:
 * https://addons.mozilla.org/developers/addon/anti-paywall
-* https://chrome.google.com/webstore/detail/likpiciaabojkjnaigjfhgdfokcahooc/publish-delayed
+* https://chrome.google.com/webstore/detail/anti-paywall/likpiciaabojkjnaigjfhgdfokcahooc
 
 ## Paywalls supported
 
