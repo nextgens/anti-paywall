@@ -1,6 +1,6 @@
 {
   "name": "Anti-Paywall",
-  "version": "0.3",
+  "version": "0.4",
   "description": "This extension will mangle your browser's requests to maximize the chances of bypassing paywalls.",
   "permissions": ["webRequest", "webRequestBlocking",
 	  "*://*.adelaidenow.com.au/*",
@@ -64,6 +64,7 @@
   "icons": {
     "48": "icons/logo-48.png",
     "96": "icons/logo-96.png"
+    "128": "icons/logo-128.png"
   },
   "manifest_version": 2
 }
