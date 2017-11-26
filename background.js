@@ -5,14 +5,24 @@ const cookies = ([
 	'n_regis=123456789'
 ]).join('; ').trim()
 
+// from https://support.google.com/webmasters/answer/1061943
+const UA_Desktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+const UA_Mobile = "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)"
+
 function evadePaywalls(details) {
+	var useMobileUA = false;
 	var reqHeaders = details.requestHeaders.filter(function(header) {
 		// drop cookies, referer and UA
-		if (header.name === "Cookie" || header.name === "Referer" || header.name === "User-Agent") {
-			return false;
+		switch(header.name) {
+			case "User-Agent":
+				useMobileUA = header.value.toLowerCase().includes("mobile")
+			case "Cookie":
+			case "Referer":
+				return false;
+				break;
+			default:
+				return true;
 		} 
-
-		return true;
 	})
 
 	// Add the spoofed ones back
@@ -22,7 +32,7 @@ function evadePaywalls(details) {
 	})
 	reqHeaders.push({
 		"name": "User-Agent",
-		"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+		"value": useMobileUA ? UA_Mobile : UA_Desktop
 	})
 
 	reqHeaders.push({
@@ -30,7 +40,6 @@ function evadePaywalls(details) {
 		"value": cookies
 	})
 
-	// This seems to do the trick just fine for WSJ
 	reqHeaders.push({
 		"name": "X-Forwarded-For",
 		"value": "66.249.66.1"
