@@ -53,7 +53,6 @@ This extension currently supports the following websites:
 * smh.com.au
 * sun-sentinel.com
 * technologyreview.com
-* telegraph.co.uk
 * theage.com.au
 * theaustralian.com.au
 * theglobeandmail.com
