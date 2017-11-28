@@ -2,6 +2,7 @@ const cookies = ([
 //	theaustralian.com.au
 	'open_token=anonymous',
 	'sr=true',
+	'FreedomCookie=true',
 	'n_regis=123456789'
 ]).join('; ').trim()
 
