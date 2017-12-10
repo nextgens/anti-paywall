@@ -1,6 +1,6 @@
 {
   "name": "Anti-Paywall",
-  "version": "0.5",
+  "version": "0.6",
   "description": "This extension will mangle your browser's requests to maximize the chances of bypassing paywalls.",
   "permissions": ["webRequest", "webRequestBlocking",
 	  "*://*.adelaidenow.com.au/*",
@@ -26,6 +26,8 @@
 	  "*://*.independent.co.uk/*",
 	  "*://*.investingdaily.com/*",
 	  "*://*.irishtimes.com/*",
+	  "*://*.kansas.com/*",
+	  "*://*.kansascity.com/*",
 	  "*://*.latimes.com/*",
 	  "*://*.letemps.ch/*",
 	  "*://*.mcall.com/*",
