@@ -34,6 +34,8 @@ This extension currently supports the following websites:
 * independent.co.uk
 * investingdaily.com
 * irishtimes.com
+* kansas.com
+* kansascity.com
 * latimes.com
 * letemps.ch
 * mcall.com
@@ -50,6 +52,7 @@ This extension currently supports the following websites:
 * quora.com
 * scmp.com
 * seattletimes.com
+* slashdot.org
 * smh.com.au
 * sun-sentinel.com
 * technologyreview.com
