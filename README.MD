@@ -21,6 +21,7 @@ This extension currently supports the following websites:
 * couriermail.com.au
 * cricketarchive.com
 * dailypress.com
+* durangoherald.com
 * economist.com
 * fd.nl
 * forbes.com
