@@ -17,6 +17,8 @@ This extension currently supports the following websites:
 * bostonglobe.com
 * chicagobusiness.com
 * chicagotribune.com
+* chip.de
+* clarin.com
 * courant.com
 * couriermail.com.au
 * cricketarchive.com
@@ -38,6 +40,7 @@ This extension currently supports the following websites:
 * kansas.com
 * kansascity.com
 * latimes.com
+* lanation.com.ar
 * letemps.ch
 * mcall.com
 * medscape.com
