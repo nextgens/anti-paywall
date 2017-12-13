@@ -1,6 +1,6 @@
 {
   "name": "Anti-Paywall",
-  "version": "0.7",
+  "version": "0.8",
   "description": "This extension will mangle your browser's requests to maximize the chances of bypassing paywalls.",
   "permissions": ["webRequest", "webRequestBlocking", "*://*/*"],
   "background": {
