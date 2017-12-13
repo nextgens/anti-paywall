@@ -31,6 +31,7 @@ const websites = [
 	  "*://*.letemps.ch/*",
 	  "*://*.mcall.com/*",
 	  "*://*.medscape.com/*",
+	  "*://*.medium.com/*",
 	  "*://*.nationalpost.com/*",
 	  "*://*.newsweek.com/*",
 	  "*://*.newyorker.com/*",
@@ -73,12 +74,14 @@ const UA_Desktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
 const UA_Mobile = "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)"
 
 function evadePaywalls(details) {
+	const shouldDropUA = !details.url.includes("medium.com");
 	var useMobileUA = false;
 	var reqHeaders = details.requestHeaders.filter(function(header) {
 		// drop cookies, referer and UA
 		switch(header.name) {
 			case "User-Agent":
 				useMobileUA = header.value.toLowerCase().includes("mobile")
+				return !shouldDropUA;
 			case "Cookie":
 			case "Referer":
 				return false;
@@ -93,10 +96,12 @@ function evadePaywalls(details) {
 		"name": "Referer",
 		"value": "https://www.google.com/"
 	})
-	reqHeaders.push({
-		"name": "User-Agent",
-		"value": useMobileUA ? UA_Mobile : UA_Desktop
-	})
+	if (shouldDropUA) {
+		reqHeaders.push({
+			"name": "User-Agent",
+			"value": useMobileUA ? UA_Mobile : UA_Desktop
+		})
+	}
 
 	reqHeaders.push({
 		"name": "Cookie",

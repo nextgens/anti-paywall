@@ -43,6 +43,7 @@ This extension currently supports the following websites:
 * letemps.ch
 * mcall.com
 * medscape.com
+* medium.com
 * nationalpost.com
 * newsweek.com
 * newyorker.com
