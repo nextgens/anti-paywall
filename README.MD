@@ -14,7 +14,6 @@ This extension currently supports the following websites:
 * adelaidenow.com.au
 * baltimoresun.com
 * barrons.com
-* bostonglobe.com
 * chicagobusiness.com
 * chicagotribune.com
 * chip.de
