@@ -22,12 +22,14 @@ This extension currently supports the following websites:
 * couriermail.com.au
 * cricketarchive.com
 * dailypress.com
+* dailytelegraph.com.au
 * durangoherald.com
 * economist.com
 * fd.nl
 * forbes.com
 * ft.com
 * geelongadvertiser.com.au
+* goldcoastbulletin.com.au
 * haaretz.co.il
 * haaretz.com
 * hbr.org
