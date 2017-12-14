@@ -69,7 +69,6 @@ This extension currently supports the following websites:
 * thestreet.com
 * thesundaytimes.co.uk
 * thetimes.co.uk
-* volkskrant.nl
 * washingtonpost.com
 * wsj.com
 * wsj.net
