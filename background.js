@@ -52,7 +52,6 @@ const websites = [
 	  "*://*.technologyreview.com/*",
 	  "*://*.theage.com.au/*",
 	  "*://*.theaustralian.com.au/*",
-	  "*://*.theglobeandmail.com/*",
 	  "*://*.thenation.com/*",
 	  "*://*.thestreet.com/*",
 	  "*://*.thesundaytimes.co.uk/*",
