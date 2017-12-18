@@ -28,6 +28,7 @@ const websites = [
 	  "*://*.irishtimes.com/*",
 	  "*://*.kansas.com/*",
 	  "*://*.kansascity.com/*",
+	  "*://*.ladepeche.fr/*",
 	  "*://*.latimes.com/*",
 	  "*://*.lanacion.com.ar/*",
 	  "*://*.letemps.ch/*",
@@ -88,7 +89,7 @@ function evadePaywalls(details) {
 				break;
 			default:
 				return true;
-		} 
+		}
 	})
 
 	// Add the spoofed ones back
@@ -120,7 +121,7 @@ function blockCookies(details) {
 	var responseHeaders = details.responseHeaders.filter(function(header) {
 		if (header.name === "Cookie") {
 			return false;
-		} 
+		}
 
 		return true;
 	})
