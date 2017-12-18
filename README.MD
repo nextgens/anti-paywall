@@ -12,6 +12,7 @@ You can install the app from the market:
 
 This extension currently supports the following websites:
 * adelaidenow.com.au
+* afr.com
 * baltimoresun.com
 * barrons.com
 * chicagobusiness.com
