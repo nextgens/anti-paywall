@@ -40,7 +40,7 @@ This extension currently supports the following websites:
 * irishtimes.com
 * kansas.com
 * kansascity.com
-* www.ladepeche.fr
+* ladepeche.fr
 * latimes.com
 * lanation.com.ar
 * letemps.ch
