@@ -75,6 +75,11 @@ const UA_Desktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
 const UA_Mobile = "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)"
 
 function evadePaywalls(details) {
+	// https://github.com/nextgens/anti-paywall/issues/25
+	if (details.url.includes("vp.nyt.com")) {
+		return details.requestHeaders;
+	}
+
 	const shouldDropUA = !details.url.includes("medium.com");
 	var useMobileUA = false;
 	var reqHeaders = details.requestHeaders.filter(function(header) {
