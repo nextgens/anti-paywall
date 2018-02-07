@@ -15,6 +15,7 @@ This extension currently supports the following websites:
 * afr.com
 * baltimoresun.com
 * barrons.com
+* cairnspost.com.au
 * chicagobusiness.com
 * chicagotribune.com
 * chip.de
