@@ -3,6 +3,7 @@ const websites = [
 	  "*://*.afr.com/*",
 	  "*://*.baltimoresun.com/*",
 	  "*://*.barrons.com/*",
+	  "*://*.cairnspost.com.au/*",
 	  "*://*.chicagobusiness.com/*",
 	  "*://*.chicagotribune.com/*",
 	  "*://*.chip.de/*",
@@ -61,6 +62,14 @@ const websites = [
 	  "*://*.wsj.com/*",
 	  "*://*.wsj.net/*"
 ]
+
+/*
+console.log(browser.storage.local.get());
+if (!browser.storage.local.get()) {
+	let restoredSettings = { blockedHosts: [...websites] };
+	browser.storage.local.set({restoredSettings});
+}
+*/
 
 const cookies = ([
 //	theaustralian.com.au
