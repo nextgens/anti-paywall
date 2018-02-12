@@ -36,6 +36,7 @@ const websites = [
 	  "*://*.mcall.com/*",
 	  "*://*.medscape.com/*",
 	  "*://*.medium.com/*",
+	  "*://*.modbee.com/*",
 	  "*://*.nationalpost.com/*",
 	  "*://*.newsweek.com/*",
 	  "*://*.newyorker.com/*",
