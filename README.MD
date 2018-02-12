@@ -66,6 +66,7 @@ This extension currently supports the following websites:
 * technologyreview.com
 * theage.com.au
 * theaustralian.com.au
+* themercury.com.au
 * thenation.com
 * thestreet.com
 * thesundaytimes.co.uk
