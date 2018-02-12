@@ -17,6 +17,7 @@ const websites = [
 	  "*://*.economist.com/*",
 	  "*://*.fd.nl/*",
 	  "*://*.forbes.com/*",
+	  "*://*.fresnobee.com/*",
 	  "*://*.ft.com/*",
 	  "*://*.geelongadvertiser.com.au/*",
 	  "*://*.goldcoastbulletin.com.au/*",
