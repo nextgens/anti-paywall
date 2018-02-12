@@ -61,6 +61,7 @@ This extension currently supports the following websites:
 * ocregister.com
 * orlandosentinel.com
 * quora.com
+* sacbee.com
 * scmp.com
 * seattletimes.com
 * slashdot.org
