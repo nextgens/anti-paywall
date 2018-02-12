@@ -27,6 +27,7 @@ This extension currently supports the following websites:
 * dailytelegraph.com.au
 * durangoherald.com
 * economist.com
+* elnuevoherald.com
 * fd.nl
 * forbes.com
 * fresnobee.com
