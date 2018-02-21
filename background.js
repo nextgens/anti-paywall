@@ -56,7 +56,7 @@ const websites = [
 	  "*://*.thestreet.com/*",
 	  "*://*.thesundaytimes.co.uk/*",
 	  "*://*.thetimes.co.uk/*",
-		"*://*.townsvillebulletin.com.au/*",
+	  "*://*.townsvillebulletin.com.au/*",
 	  "*://*.washingtonpost.com/*",
 	  "*://*.wsj.com/*",
 	  "*://*.wsj.net/*"
