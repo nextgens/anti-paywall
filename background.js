@@ -56,6 +56,7 @@ const websites = [
 	  "*://*.thestreet.com/*",
 	  "*://*.thesundaytimes.co.uk/*",
 	  "*://*.thetimes.co.uk/*",
+	  "*://*.townsvillebulletin.com.au/*",
 	  "*://*.washingtonpost.com/*",
 	  "*://*.wsj.com/*",
 	  "*://*.wsj.net/*"
@@ -88,7 +89,7 @@ function evadePaywalls(details) {
 				break;
 			default:
 				return true;
-		} 
+		}
 	})
 
 	// Add the spoofed ones back
@@ -120,7 +121,7 @@ function blockCookies(details) {
 	var responseHeaders = details.responseHeaders.filter(function(header) {
 		if (header.name === "Cookie") {
 			return false;
-		} 
+		}
 
 		return true;
 	})
