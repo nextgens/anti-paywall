@@ -77,6 +77,7 @@ const cookies = ([
 	'open_token=anonymous',
 	'sr=true',
 	'FreedomCookie=true',
+	'paywallCount=1',
 	'n_regis=123456789'
 ]).join('; ').trim()
 
