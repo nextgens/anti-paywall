@@ -1,7 +1,9 @@
 const websites = [
 	  "*://*.adelaidenow.com.au/*",
+	  "*://*.afr.com/*",
 	  "*://*.baltimoresun.com/*",
 	  "*://*.barrons.com/*",
+	  "*://*.cairnspost.com.au/*",
 	  "*://*.chicagobusiness.com/*",
 	  "*://*.chicagotribune.com/*",
 	  "*://*.chip.de/*",
@@ -13,8 +15,11 @@ const websites = [
 	  "*://*.dailytelegraph.com.au/*",
 	  "*://*.durangoherald.com/*",
 	  "*://*.economist.com/*",
+	  "*://*.elcorreo.com/*",
+	  "*://*.elnuevoherald.com/*",
 	  "*://*.fd.nl/*",
 	  "*://*.forbes.com/*",
+	  "*://*.fresnobee.com/*",
 	  "*://*.ft.com/*",
 	  "*://*.geelongadvertiser.com.au/*",
 	  "*://*.goldcoastbulletin.com.au/*",
@@ -34,16 +39,20 @@ const websites = [
 	  "*://*.mcall.com/*",
 	  "*://*.medscape.com/*",
 	  "*://*.medium.com/*",
+	  "*://*.miamiherald.com/*",
+	  "*://*.modbee.com/*",
 	  "*://*.nationalpost.com/*",
 	  "*://*.newsweek.com/*",
 	  "*://*.newyorker.com/*",
 	  "*://*.nikkei.com/*",
 	  "*://*.nrc.nl/*",
+	  "*://*.ntnews.com.au/*",
 	  "*://*.nyt.com/*",
 	  "*://*.nytimes.com/*",
 	  "*://*.ocregister.com/*",
 	  "*://*.orlandosentinel.com/*",
 	  "*://*.quora.com/*",
+	  "*://*.sacbee.com/*",
 	  "*://*.scmp.com/*",
 	  "*://*.seattletimes.com/*",
 	  "*://*.slashdot.org/*",
@@ -52,10 +61,12 @@ const websites = [
 	  "*://*.technologyreview.com/*",
 	  "*://*.theage.com.au/*",
 	  "*://*.theaustralian.com.au/*",
+	  "*://*.themercury.com.au/*",
 	  "*://*.thenation.com/*",
 	  "*://*.thestreet.com/*",
 	  "*://*.thesundaytimes.co.uk/*",
 	  "*://*.thetimes.co.uk/*",
+	  "*://*.townsvillebulletin.com.au/*",
 	  "*://*.washingtonpost.com/*",
 	  "*://*.wsj.com/*",
 	  "*://*.wsj.net/*"
@@ -66,6 +77,7 @@ const cookies = ([
 	'open_token=anonymous',
 	'sr=true',
 	'FreedomCookie=true',
+	'paywallCount=1',
 	'n_regis=123456789'
 ]).join('; ').trim()
 
@@ -74,6 +86,11 @@ const UA_Desktop = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.c
 const UA_Mobile = "Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible ; Googlebot/2.1 ; +http://www.google.com/bot.html)"
 
 function evadePaywalls(details) {
+	// https://github.com/nextgens/anti-paywall/issues/25
+	if (details.url.includes("vp.nyt.com")) {
+		return details.requestHeaders;
+	}
+
 	const shouldDropUA = !details.url.includes("medium.com");
 	var useMobileUA = false;
 	var reqHeaders = details.requestHeaders.filter(function(header) {
@@ -88,7 +105,7 @@ function evadePaywalls(details) {
 				break;
 			default:
 				return true;
-		} 
+		}
 	})
 
 	// Add the spoofed ones back
@@ -120,7 +137,7 @@ function blockCookies(details) {
 	var responseHeaders = details.responseHeaders.filter(function(header) {
 		if (header.name === "Cookie") {
 			return false;
-		} 
+		}
 
 		return true;
 	})

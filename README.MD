@@ -12,8 +12,10 @@ You can install the app from the market:
 
 This extension currently supports the following websites:
 * adelaidenow.com.au
+* afr.com
 * baltimoresun.com
 * barrons.com
+* cairnspost.com.au
 * chicagobusiness.com
 * chicagotribune.com
 * chip.de
@@ -25,8 +27,11 @@ This extension currently supports the following websites:
 * dailytelegraph.com.au
 * durangoherald.com
 * economist.com
+* elcorreo.com
+* elnuevoherald.com
 * fd.nl
 * forbes.com
+* fresnobee.com
 * ft.com
 * geelongadvertiser.com.au
 * goldcoastbulletin.com.au
@@ -46,16 +51,20 @@ This extension currently supports the following websites:
 * mcall.com
 * medscape.com
 * medium.com
+* miamiherald.com
+* modbee.com
 * nationalpost.com
 * newsweek.com
 * newyorker.com
 * nikkei.com
 * nrc.nl
+* ntnews.com.au
 * nyt.com
 * nytimes.com
 * ocregister.com
 * orlandosentinel.com
 * quora.com
+* sacbee.com
 * scmp.com
 * seattletimes.com
 * slashdot.org
@@ -64,10 +73,12 @@ This extension currently supports the following websites:
 * technologyreview.com
 * theage.com.au
 * theaustralian.com.au
+* themercury.com.au
 * thenation.com
 * thestreet.com
 * thesundaytimes.co.uk
 * thetimes.co.uk
+* townsvillebulletin.com.au
 * washingtonpost.com
 * wsj.com
 * wsj.net
