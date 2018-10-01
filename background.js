@@ -145,12 +145,17 @@ function blockCookies(details) {
 	return {responseHeaders: responseHeaders};
 }
 
-browser.webRequest.onBeforeSendHeaders.addListener(evadePaywalls, {
+// MS Edge support
+if (!chrome.webRequest) {
+  chrome.webRequest = browser.webRequest;
+}
+
+chrome.webRequest.onBeforeSendHeaders.addListener(evadePaywalls, {
   urls: [...websites],
   types: ["main_frame", "script"],
 }, ["requestHeaders", "blocking"]);
 
-browser.webRequest.onHeadersReceived.addListener(blockCookies, {
+chrome.webRequest.onHeadersReceived.addListener(blockCookies, {
   urls: [...websites],
   types: ["main_frame", "script"],
 }, ["responseHeaders", "blocking"]);
