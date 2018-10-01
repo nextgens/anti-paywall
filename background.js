@@ -145,12 +145,12 @@ function blockCookies(details) {
 	return {responseHeaders: responseHeaders};
 }
 
-chrome.webRequest.onBeforeSendHeaders.addListener(evadePaywalls, {
+browser.webRequest.onBeforeSendHeaders.addListener(evadePaywalls, {
   urls: [...websites],
   types: ["main_frame", "script"],
 }, ["requestHeaders", "blocking"]);
 
-chrome.webRequest.onHeadersReceived.addListener(blockCookies, {
+browser.webRequest.onHeadersReceived.addListener(blockCookies, {
   urls: [...websites],
   types: ["main_frame", "script"],
 }, ["responseHeaders", "blocking"]);

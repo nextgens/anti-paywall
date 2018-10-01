@@ -8,9 +8,6 @@
     "scripts": ["background.js"],
     "persistent": true
   },
-  "-ms-preload": {
-    "backgroundScript": "edge-bridge.js"
-  },
   "icons": {
     "48": "icons/logo-48.png",
     "96": "icons/logo-96.png",
