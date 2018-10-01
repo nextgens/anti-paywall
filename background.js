@@ -145,6 +145,11 @@ function blockCookies(details) {
 	return {responseHeaders: responseHeaders};
 }
 
+// MS Edge support
+if (!chrome.webRequest) {
+  chrome.webRequest = browser.webRequest;
+}
+
 chrome.webRequest.onBeforeSendHeaders.addListener(evadePaywalls, {
   urls: [...websites],
   types: ["main_frame", "script"],
