@@ -6,7 +6,7 @@
   "permissions": ["webRequest", "webRequestBlocking", "*://*/*"],
   "background": {
     "scripts": ["background.js"],
-    "persistent": true
+    "persistent": false
   },
   "icons": {
     "48": "icons/logo-48.png",
