@@ -1,16 +1,25 @@
 {
-  "name": "Anti-Paywall",
-  "version": "0.9",
-  "description": "This extension will mangle your browser's requests to maximize the chances of bypassing paywalls.",
-  "permissions": ["webRequest", "webRequestBlocking", "*://*/*"],
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "icons": {
-    "48": "icons/logo-48.png",
-    "96": "icons/logo-96.png",
-    "128": "icons/logo-128.png"
-  },
-  "manifest_version": 2
+    "author": "nextgens",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "description": "This extension will mangle your browser's requests to maximize the chances of bypassing paywalls.",
+    "icons": {
+        "48": "icons/logo-48.png",
+        "96": "icons/logo-96.png",
+        "128": "icons/logo-128.png"
+    },
+    "manifest_version": 2,
+    "name": "Anti-Paywall",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ],
+    "version": "0.9",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
 }
-
