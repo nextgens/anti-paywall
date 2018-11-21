@@ -49,6 +49,7 @@ const websites = [
 	  "*://*.slashdot.org/*",
 	  "*://*.smh.com.au/*",
 	  "*://*.sun-sentinel.com/*",
+	  "*://*.sunshinecoastdaily.com.au/*",
 	  "*://*.technologyreview.com/*",
 	  "*://*.theage.com.au/*",
 	  "*://*.theaustralian.com.au/*",
@@ -56,6 +57,7 @@ const websites = [
 	  "*://*.thestreet.com/*",
 	  "*://*.thesundaytimes.co.uk/*",
 	  "*://*.thetimes.co.uk/*",
+	  "*://*.townsvillebulletin.com.au/*",
 	  "*://*.washingtonpost.com/*",
 	  "*://*.wsj.com/*",
 	  "*://*.wsj.net/*"
