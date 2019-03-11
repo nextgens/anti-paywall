@@ -8,6 +8,19 @@ You can install the app from the market:
 * https://addons.mozilla.org/addon/anti-paywall
 * https://chrome.google.com/webstore/detail/anti-paywall/likpiciaabojkjnaigjfhgdfokcahooc
 
+### Manually Install Chrome Extension
+
+* Open Chrome 
+* Download the ZIP from this Github repository using 'Clone or Download' Green button on https://github.com/nextgens/anti-paywall/
+* Extract to a folder of your choice on your PC
+* Open Chrome 
+* Access Chrome Extensions by entering chrome://extensions/ in the URL.
+* Toggle the Developer Mode to 'ON' in the top right hand corner of the extensions page.
+* Click on 'Load Unpacked' on the top left hand side
+* Navigate to the folder earlier
+* Agree to prompt
+* Finished, the Extension should be activated in chrome://extensions/
+
 ## Paywalls supported
 
 This extension currently supports the following websites:
